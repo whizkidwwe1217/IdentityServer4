@@ -1,0 +1,10 @@
+GET http://localhost:5000/.well-known/openid-configuration
+
+###
+POST http://localhost:5000/connect/token?
+&grant_type=client_credentials
+&client_id=postmantestclient
+&client_secret=PostmanSecret
+
+###
+GET https://localhost:6000/identity
